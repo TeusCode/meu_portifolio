@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Mr+Bedfort&display=swap');
+/*Desenvolvido visando Mobile First*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-base: #1470AF;
+}
+
+body {
+    --background-color: rgb(196, 193, 193);
+    height: 300vw;
+}
+
+header#cabecario {
+    background-color: rgba(255, 255, 255, 0.747);
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.068);
+}
+
+header#cabecario #menu {
+    margin: 5px;
+    color: rgba(128, 128, 128, 0.438);
+    padding: 5px;
+    float: right;
+    font-size: 3.5em;
+    display: block;
+}
+
+header#cabecario #menu:hover {
+    background-color: var(--cor-base);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+header#cabecario .titulo {
+    float: left;
+}
+
+header#cabecario ul {
+    display: none;
+}
+
+header#cabecario ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+}
+
+header#cabecario ul li a:hover {
+    color: var(--cor-base);
+}
+
+header#cabecario ul li {
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+    padding: 20px 20px;
+}
+
+main {
+    width: 100vw;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 8em;
+    padding-top: 100px;
+    padding-bottom: 5px;
+    color: var(--cor-base);
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 110px;
+    width: 100%;
+}
+
+main .autor {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
