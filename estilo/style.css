@@ -25,13 +25,15 @@ header#cabecario {
 }
 
 header#cabecario #menu {
-    margin: 5px;
+    margin: 10px;
+    margin-right: 25px;
     color: rgba(128, 128, 128, 0.438);
     padding: 5px;
     float: right;
     font-size: 3.5em;
     display: block;
 }
+
 
 header#cabecario #menu:hover {
     background-color: var(--cor-base);
@@ -40,18 +42,27 @@ header#cabecario #menu:hover {
     cursor: pointer;
 }
 
-header#cabecario .titulo {
-    float: left;
-}
-
 header#cabecario ul {
-    display: none;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    height: 90vh;
+    transform: translateY(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+    background-color: white;
+    padding: 20px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+
 }
 
 header#cabecario ul li a {
     text-decoration: none;
     color: gray;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 header#cabecario ul li a:hover {
@@ -61,8 +72,7 @@ header#cabecario ul li a:hover {
 header#cabecario ul li {
     list-style-type: none;
     text-decoration: none;
-    float: right;
-    padding: 20px 20px;
+    padding: 40px
 }
 
 main {

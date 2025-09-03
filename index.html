@@ -14,10 +14,11 @@
         <span id="menu" class="material-icons" onclick="abrirMenu()">drag_handle</span>
         <ul id="menuAberto">
             <li class="titulo"><a href="">TeusCode</a></li>
-            <li><a href="">Projetos</a></li>
             <li><a href="">Sobre</a></li>
+            <li><a href="">Projetos</a></li>
             <li><a href="">Contato</a></li>
         </ul>
+
     </header>
     <main>
         <h1>Mateus Vilaça</h1>
@@ -54,14 +55,24 @@
         </section>
     </footer>
     <script>
-        const menu = document.getElementById('menu')
-        const menuAberto = document.getElementById('menuAberto')
+        const menuJanela = document.getElementById('cabecario');
+        const menu = document.getElementById('menu'); /*icon menu*/
+        const menuAberto = document.getElementById('menuAberto');
+        const titulo = document.querySelector('.titulo');
 
         function abrirMenu() {
-            if (menuAberto.style.display == 'none') {
-                menuAberto.style.display = 'block';
+            if (menuAberto.style.visibility == 'hidden') {
+                menuAberto.style.visibility = 'visible';
+                menuAberto.style.opacity = '1';
+                titulo.style.visibility = 'hidden';
+                menuAberto.style.transform = 'translateY(0)';
+                menu.innerHTML = 'close';
+            
+                
             } else {
-                menuAberto.style.display = 'none';
+                menuAberto.style.visibility= 'hidden';
+                menu.innerHTML = 'drag_handle';
+                menuAberto.style.transform = 'translateY(-20px)';
             }
         }
     </script>
